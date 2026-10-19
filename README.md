@@ -1,7 +1,6 @@
 # Sitzplatz im Zug ohne Reservierung – wohin am Bahnsteig, wenn alle dasselbe wollen? – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-sitzplatz-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-sitzplatz-demo.streamlit.app/)**
 
 Fall-Demo für die Website „Sebastian Hanisch – Operations Research und Machine Learning“ (`demos.html`), siebter Baustein der Reihe **Bahn/Schienenverkehr** und der erste aus Sicht der **Fahrgäste**
 (die sechs anderen Bausteine – Takt, Crew Pairing, Trassenkonflikt, Ablaufberg, Fahrzeitreserve, Energiefahrweise – sind Betreiberseite). Ein Fahrgast ohne Platzreservierung wählt Tür und Platzsuche in einem Zug
