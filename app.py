@@ -86,6 +86,17 @@ Weiter unten: die **Kernfrage** (ab welchem Anteil Mitwisser kippt der Tipp?), z
 und **📐 Mathematische Formulierung**.
 """
 )
+
+# erklaerseite:einfach:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/sitzplatz-im-zug-erklaert.json, nicht von Hand ändern)
+with st.expander("💬 In einfachen Worten"):
+    st.markdown(
+        """
+Stellen Sie sich einen Zug ohne Platzreservierung vor. Viele steigen bevorzugt an den Türen ein, die dem Zugang des Bahnsteigs am nächsten liegen. Dort sind die Wagen voll, während hinten Plätze frei bleiben. Daher der Tipp „geh ans Zugende“. Kennen ihn aber viele, wird es auch dort voll: ein **Herdeneffekt**. Die Demo fragt, ab welchem Anteil Mitwissender der Tipp seinen Vorsprung verliert und ob eine Auslastungsanzeige besser dasteht. Dazu vergleicht sie mehrere Strategien für einen Fahrgast auf denselben Zugverläufen. Alle Verhaltensannahmen sind gesetzt und nicht im Zug gemessen: Die Aussagen gelten im Modell.
+
+[Ausführlich und verständlich erklärt, mit Fachteil](https://sebastianhanisch.net/sitzplatz-im-zug-erklaert.html)
+        """
+    )
+# erklaerseite:einfach:end
 st.caption(
     "Erster Baustein der Reihe [Bahn/Schienenverkehr](https://sebastianhanisch.net/schienenverkehr-optimierung.html) aus Sicht der Fahrgäste. Der Herdeneffekt "
     "(„alle springen zum leersten Tor“) steht schon in [nash-demo](https://sebastianhanisch-nash-demo.streamlit.app/), dort mit Wartezeit statt Platzschwelle."
@@ -256,6 +267,27 @@ with st.expander("🔧 Wie wir das erreichen – vollständiger Methodenvergleic
                       delta=f"{100 * (o_rows['orakel']['sitz'] - max(o_rows[k]['sitz'] for k in C.APP_STRATEGIES)):+.0f} Pp. gegen die beste Regel", delta_color="off")
 
 with st.expander("📐 Mathematische Formulierung"):
+    # erklaerseite:lesehilfe:start (erzeugt von tools/set_demo_explainer.py (Website-Repo) aus tools/content/explainers/sitzplatz-im-zug-erklaert.json, nicht von Hand ändern)
+    st.markdown(
+        r"""
+**Lesehilfe.** Gegeben sind der Zug mit seinen Plätzen und Türen, die Bündelung der Mitreisenden an den Treppen und die Anteile, die dem Tipp folgen oder die Anzeige nutzen. Gesucht ist der Sitzanteil des Fahrgasts je Strategie und der Anteil $\varphi^{*}$, ab dem der Tipp „Zugende“ nicht mehr vor „Nächste Tür“ liegt.
+
+| Symbol | Bedeutung |
+|---|---|
+| $d$, $d_0$ | Tür, Tür am Zugang des Bahnsteigs |
+| $a$ | Stärke der Bündelung an den Treppen |
+| $\sigma$ | Streuung der Bündelung (in Reihen) |
+| $w_d$ | Gewicht der Tür $d$ bei der Türwahl |
+| $N$, $S_c$ | Zahl der Mitreisenden, die in einen Wagen drängen, und dessen freie Plätze |
+| $\varphi$ | Anteil der Mitreisenden, die dem Tipp folgen |
+| $\bar x_{\text{Ende}}$, $\bar x_{\text{nah}}$ | mittlerer Sitzanteil bei „Zugende“ bzw. „Nächste Tür“ |
+| $\varphi^{*}$ | Kreuzungspunkt |
+| $F_d$, $n$, $q_d$ | freie Plätze im Umkreis der Tür, Zahl der Einsteigenden, naiver Türanteil im Umkreis |
+
+[Schritt für Schritt erklärt, mit Herleitung und Literatur](https://sebastianhanisch.net/sitzplatz-im-zug-erklaert.html#fachleute)
+        """
+    )
+    # erklaerseite:lesehilfe:end
     st.markdown("**Mitreisende.** Jedes Start-Ziel-Paar der Linie mit $M$ Halten bringt eine Poisson-verteilte Zahl von Fahrgästen; die Rate ist so gewählt, "
                 "dass der stärkste Querschnitt auf die Spitzenlast $\\rho$ der $S$ Sitzplätze kommt:")
     st.markdown("$$\\lambda = \\frac{\\rho\\, S}{\\lfloor M/2\\rfloor\\,\\lceil M/2\\rceil}$$")
