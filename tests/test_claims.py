@@ -25,8 +25,11 @@ def test_bundling_is_the_precondition():
     assert round(min(wide), 2) == 0.20 and round(max(wide), 2) == 0.45
 
 
-def test_low_load_often_has_no_advantage():
-    assert R.star_summary(RES, "ende", rho=0.8)["no_advantage"] == 42 and R.star_summary(RES, "ende", rho=0.8)["cells"] == 96
+def test_low_load_loses_advantage_in_some_cells():
+    s = R.star_summary(RES, "ende", rho=0.8)
+    assert s["no_advantage"] == 42 and s["cells"] == 96
+    assert R.star_summary(RES, "ende", rho=0.8, a=0.0)["no_advantage"] == 24
+    assert s["with_star"] == 54 and round(s["min"], 2) == 0.10 and round(s["max"], 2) == 0.20
 
 
 def test_blockade_does_not_move_the_crossing():

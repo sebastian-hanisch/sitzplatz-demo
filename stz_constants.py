@@ -97,7 +97,7 @@ STRATEGY_COLORS = {"naechste": "#9a9a9a", "ende": "#d98a2b", "durchlaufen": "#4c
 
 PRESETS = {
     "Pendlerzug voll (Voreinstellung)": {"rho": 120, "stair": 4, "reach": 20, "stop": 3, "phi": 0, "psi": 0, "advice": "ende", "mode": "bester", "block": 8, "seed": DEFAULT_SEED},
-    "Halbleerer Zug": {"rho": 80, "stair": 4, "reach": 20, "stop": 3, "phi": 0, "psi": 0, "advice": "ende", "mode": "bester", "block": 8, "seed": DEFAULT_SEED},
+    "Spitzenlast 80 %": {"rho": 80, "stair": 4, "reach": 20, "stop": 3, "phi": 0, "psi": 0, "advice": "ende", "mode": "bester", "block": 8, "seed": DEFAULT_SEED},
     "Starke Treppe": {"rho": 120, "stair": 8, "reach": 20, "stop": 3, "phi": 0, "psi": 0, "advice": "ende", "mode": "bester", "block": 8, "seed": DEFAULT_SEED},
     "Ohne Bündelung": {"rho": 120, "stair": 0, "reach": 20, "stop": 3, "phi": 0, "psi": 0, "advice": "ende", "mode": "bester", "block": 8, "seed": DEFAULT_SEED},
     "Jeder Dritte kennt den Tipp": {"rho": 120, "stair": 4, "reach": 20, "stop": 3, "phi": 30, "psi": 0, "advice": "ende", "mode": "bester", "block": 8, "seed": DEFAULT_SEED},
@@ -107,7 +107,7 @@ PRESETS = {
 }
 PRESET_HELP = {
     "Pendlerzug voll (Voreinstellung)": "Spitzenlast 120 % der Sitzplätze, mittlere Treppen-Bündelung, niemand außer Ihnen kennt den Tipp: Der Hinterzug ist leer.",
-    "Halbleerer Zug": "Spitzenlast 80 %: Es gibt genug Plätze, der Tipp bringt kaum etwas (Messreihe: in der Mehrzahl der Zellen kein Vorsprung).",
+    "Spitzenlast 80 %": "Spitzenlast 80 %: Es gibt mehr Plätze als bei 120 %. In der Messreihe hat der Tipp bei Bündelung in 54 von 72 Zellen einen Vorsprung, in 18 nicht; ohne Bündelung nie.",
     "Starke Treppe": "Bündelung 8 statt 4: Der Zug füllt sich noch einseitiger, der Tipp hat mehr Vorsprung und hält länger.",
     "Ohne Bündelung": "Negativkontrolle: Ohne Treppen-Bündelung verteilen sich die Fahrgäste gleichmäßig, der Tipp hat keinen Vorsprung.",
     "Jeder Dritte kennt den Tipp": "30 % der Mitreisenden gehen an die Türen des letzten Wagens: Der Hinterzug ist voll, der Tipp verliert.",
