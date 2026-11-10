@@ -78,7 +78,7 @@ with st.container(key="kopf"):
 st.markdown(
     """
 Im Zug ohne Platzreservierung gilt der Tipp **„geh ans Zugende“**: Die Wagen an den **Treppen** des Bahnsteigs sind voll, hinten ist es leer. Die Demo
-fragt, **wie lange dieser Tipp trägt**, wenn ihn immer mehr Mitreisende kennen, und ob eine **Auslastungsanzeige** besser dasteht. Sie vergleicht Strategien für einen
+fragt, **wie lange dieser Tipp gilt**, wenn ihn immer mehr Mitreisende kennen, und ob eine **Auslastungsanzeige** besser dasteht. Sie vergleicht Strategien für einen
 Fahrgast (nächste Tür, Zugende, durchlaufen, stehen bleiben, Anzeige) auf einem Zug mit 320 Plätzen, live auf gleichen Zugverläufen und vorgerechnet über
 Hunderte von Annahme-Zellen. **Alles hier ist Modell mit gesetzten Annahmen, keine Messung im Zug.**
 
