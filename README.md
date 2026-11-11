@@ -2,7 +2,7 @@
 
 **[→ Demo live ausprobieren](https://sebastianhanisch-sitzplatz-demo.streamlit.app/)**
 
-Fall-Demo für die Website „Sebastian Hanisch – Operations Research und Machine Learning“ (`demos.html`), siebter Baustein der Reihe **Bahn/Schienenverkehr** und der erste aus Sicht der **Fahrgäste**
+Fall-Demo für die Website „Sebastian Hanisch – Operations Research und Machine Learning“ (`demos.html`), Demo der Themenseite **Sitzplätze optimieren** (zusammen mit boarding-demo und tischordnung-demo) und zugleich Baustein der Reihe **Bahn/Schienenverkehr** (dort als geliehene Demo geführt), der erste aus Sicht der **Fahrgäste**
 (die sechs anderen Bausteine – Takt, Crew Pairing, Trassenkonflikt, Ablaufberg, Fahrzeitreserve, Energiefahrweise – sind Betreiberseite). Ein Fahrgast ohne Platzreservierung wählt Tür und Platzsuche in einem Zug
 mit 320 Plätzen, in dem sich die Mitreisenden an den Treppen des Bahnsteigs bündeln. Verglichen werden fünf Strategien (nächste Tür, Zugende, durchlaufen, stehen bleiben, Anzeige) auf **denselben Zugverläufen**;
 die Kernfrage ist, **ab welchem Anteil Mitwisser der bekannte Tipp „geh ans Zugende“ seinen Vorsprung verliert**, und ob eine Auslastungsanzeige besser dasteht.
@@ -134,4 +134,4 @@ Gebaut mit Streamlit, Plotly, pandas und fpdf2.
 
 ---
 
-Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zum Thema: [Schienenverkehr optimieren](https://sebastianhanisch.net/schienenverkehr-optimierung.html).
+Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). Mehr zum Thema: [Sitzplätze optimieren](https://sebastianhanisch.net/sitzplaetze-optimieren.html).

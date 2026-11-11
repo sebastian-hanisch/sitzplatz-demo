@@ -1,7 +1,7 @@
 """Sitzplatz im Zug ohne Reservierung – wohin am Bahnsteig, wenn alle dasselbe wollen? - interaktive Fall-Demo
 Sebastian Hanisch - Operations Research und Machine Learning
 
-Siebter Baustein der Reihe Bahn/Schienenverkehr und der erste aus Sicht der Fahrgäste: Ein Zug mit freier Platzwahl, Mitreisende, die sich
+Demo der Themenseite Sitzplätze optimieren und Baustein der Reihe Bahn/Schienenverkehr (dort geliehen), der erste aus Sicht der Fahrgäste: Ein Zug mit freier Platzwahl, Mitreisende, die sich
 an den Treppen des Bahnsteigs bündeln, und ein Fokus-Fahrgast, der eine Strategie wählt. Gemessen wird der Sitzanteil der Fahrt, und ab welchem
 Anteil Mitwisser ein Tipp (oder eine Auslastungsanzeige) seinen Vorsprung verliert. Alle Verhaltensparameter sind Annahmen, keine Messungen.
 
@@ -98,7 +98,7 @@ Stellen Sie sich einen Zug ohne Platzreservierung vor. Viele steigen bevorzugt a
     )
 # erklaerseite:einfach:end
 st.caption(
-    "Erster Baustein der Reihe [Bahn/Schienenverkehr](https://sebastianhanisch.net/schienenverkehr-optimierung.html) aus Sicht der Fahrgäste. Der Herdeneffekt "
+    "Demo der Seite [Sitzplätze optimieren](https://sebastianhanisch.net/sitzplaetze-optimieren.html), verwandt mit der Reihe [Bahn/Schienenverkehr](https://sebastianhanisch.net/schienenverkehr-optimierung.html) (dort die Fahrgastsicht). Der Herdeneffekt "
     "(„alle springen zum leersten Tor“) steht schon in [nash-demo](https://sebastianhanisch-nash-demo.streamlit.app/), dort mit Wartezeit statt Platzschwelle."
 )
 st.caption("🔗 Die Adresszeile oben spiegelt Ihre aktuelle Konfiguration wider – einfach kopieren, um ein Szenario zu teilen.")
@@ -342,5 +342,5 @@ st.markdown("---")
 st.caption(
     "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
     "Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). "
-    "Mehr zum Thema: [Schienenverkehr optimieren](https://sebastianhanisch.net/schienenverkehr-optimierung.html)."
+    "Mehr zum Thema: [Sitzplätze optimieren](https://sebastianhanisch.net/sitzplaetze-optimieren.html)."
 )
